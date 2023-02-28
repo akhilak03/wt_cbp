@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head><style>
+<head>
+  <script>function validateForm() {
+	 
+    var mail=document.myform.uname.value;  
+    var password=document.myform.pwd.value;  
+     
+    
+   
+    if(password.length<6){  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+      } 
+    var atposition=mail.indexOf("@");  
+    var dotposition=mail.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+        alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n 		dotposition:"+dotposition);  
+        return false;  
+      }  
+    
+    
+  }</script>
+  <style>
+footer { 
+ position: fixed; 
+ left: 0; 
+ bottom: 0; 
+ width: 100%; 
+ background-color:cadetblue; 
+ color: white; 
+ text-align: center; 
+ } 
 
-body{text-align:center}
+body{text-align:center;
+  background-color:#cae2e3;}
 </style>
 </head>
 <body>
@@ -10,16 +41,15 @@ body{text-align:center}
 <h2>LOGIN PAGE</h2>
 
 <form action="/action_page.php">
-  <label for="UID">USER ID:</label><br>
-  <input type="text" id="UID" name="UID" value=""><br>
-  <label for="PWD">PASSWORD:</label><br>
-  <input type="text" id="PWD" name="PWD" value=""><br><br>
+  <label for="uname">USER ID:</label><br>
+  <input type="text" id="uname" name="uname" value=""><br>
+  <label for="pwd">PASSWORD:</label><br>
+  <input type="text" id="pwd" name="pwd" value=""><br><br>
   <div className="row ">
   <input type="submit" value="Submit">
   <input type="RESET" value="RESET">
   </div>
-</form> 
-
+</form> <footer> <p>© 20071A0537-Copyright</p></footer> 
 
 </body>
 </html>
