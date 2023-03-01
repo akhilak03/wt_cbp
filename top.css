@@ -1,0 +1,26 @@
+.bar{
+ border: 5px solid #2B3467;
+  border-radius: 25px;
+background-color:#2B3467;
+
+}
+a{font-family:garamond;
+font-size:20px;
+color: #FCFFE7;}
+a:hover, a:active {
+  color: yellow;
+}
+.title_bar{
+ border: 5px solid #BAD7E9;
+background-color:#BAD7E9;
+  border-radius: 25px;
+font-family:papyrus;
+}
+
+table {
+	
+	
+	height: 25%;
+	width: 100%;
+
+}
